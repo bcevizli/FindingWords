@@ -66,7 +66,7 @@ extension KeyboardViewController {
         let margin: CGFloat = 20
         let size: CGFloat = (collectionView.frame.size.width-margin)/10
         
-        return CGSize(width: size, height: size)
+        return CGSize(width: size, height: size*1.5)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
