@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BoardViewController.swift
 //  FindingWords
 //
 //  Created by Adem Burak Cevizli on 6.03.2023.
@@ -7,13 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BoardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .blue
     }
+    
 
+   
 
 }
-

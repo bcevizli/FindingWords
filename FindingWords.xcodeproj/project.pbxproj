@@ -13,6 +13,9 @@
 		EA5C839829B673B300444602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5C839629B673B300444602 /* Main.storyboard */; };
 		EA5C839A29B673B500444602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5C839929B673B500444602 /* Assets.xcassets */; };
 		EA5C839D29B673B500444602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5C839B29B673B500444602 /* LaunchScreen.storyboard */; };
+		EA5C83A729B674B700444602 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C83A629B674B700444602 /* KeyboardViewController.swift */; };
+		EA5C83A929B6750F00444602 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C83A829B6750F00444602 /* BoardViewController.swift */; };
+		EA5C83AB29B67AE200444602 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C83AA29B67AE200444602 /* KeyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		EA5C839929B673B500444602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA5C839C29B673B500444602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA5C839E29B673B500444602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA5C83A629B674B700444602 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		EA5C83A829B6750F00444602 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		EA5C83AA29B67AE200444602 /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		EA5C838F29B673B300444602 /* FindingWords */ = {
 			isa = PBXGroup;
 			children = (
-				EA5C839029B673B300444602 /* AppDelegate.swift */,
-				EA5C839229B673B300444602 /* SceneDelegate.swift */,
-				EA5C839429B673B300444602 /* ViewController.swift */,
-				EA5C839629B673B300444602 /* Main.storyboard */,
-				EA5C839929B673B500444602 /* Assets.xcassets */,
-				EA5C839B29B673B500444602 /* LaunchScreen.storyboard */,
+				EA5C83A529B6744B00444602 /* Other */,
+				EA5C83A429B6743500444602 /* Core */,
 				EA5C839E29B673B500444602 /* Info.plist */,
 			);
 			path = FindingWords;
+			sourceTree = "<group>";
+		};
+		EA5C83A429B6743500444602 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EA5C839429B673B300444602 /* ViewController.swift */,
+				EA5C83A629B674B700444602 /* KeyboardViewController.swift */,
+				EA5C83A829B6750F00444602 /* BoardViewController.swift */,
+				EA5C83AA29B67AE200444602 /* KeyCell.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EA5C83A529B6744B00444602 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EA5C839029B673B300444602 /* AppDelegate.swift */,
+				EA5C839229B673B300444602 /* SceneDelegate.swift */,
+				EA5C839629B673B300444602 /* Main.storyboard */,
+				EA5C839929B673B500444602 /* Assets.xcassets */,
+				EA5C839B29B673B500444602 /* LaunchScreen.storyboard */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +166,9 @@
 				EA5C839529B673B300444602 /* ViewController.swift in Sources */,
 				EA5C839129B673B300444602 /* AppDelegate.swift in Sources */,
 				EA5C839329B673B300444602 /* SceneDelegate.swift in Sources */,
+				EA5C83AB29B67AE200444602 /* KeyCell.swift in Sources */,
+				EA5C83A729B674B700444602 /* KeyboardViewController.swift in Sources */,
+				EA5C83A929B6750F00444602 /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
