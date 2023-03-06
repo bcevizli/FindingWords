@@ -9,6 +9,7 @@ import UIKit
 
 protocol BoardViewControllerDataSource: AnyObject {
     var currentGuesses: [[Character?]] { get }
+    func boxColor(at indexPath: IndexPath) -> UIColor?
 }
 
 class BoardViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource {
@@ -59,7 +60,7 @@ extension BoardViewController {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KeyCell.identifier, for: indexPath) as? KeyCell else {
             fatalError()
         }
-        cell.backgroundColor = nil
+        cell.backgroundColor = dataSource?.boxColor(at: indexPath)
         cell.layer.borderWidth = 1
         cell.layer.borderColor = UIColor.systemGray3.cgColor
         
